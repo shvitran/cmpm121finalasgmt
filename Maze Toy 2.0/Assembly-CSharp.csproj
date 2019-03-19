@@ -61,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BoardTilt.cs" />
+    <Compile Include="Assets\Scripts\BoardTilt2.cs" />
+    <Compile Include="Assets\Scripts\BoardTilt3.cs" />
+    <Compile Include="Assets\Scripts\EndGame.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\Scripts\SceneChange2.cs" />
+    <Compile Include="Assets\TiltGOBoard.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Sherry Tran/Documents/CMPM 121/cmpm121finalasgmt/Maze Toy 2.0/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
