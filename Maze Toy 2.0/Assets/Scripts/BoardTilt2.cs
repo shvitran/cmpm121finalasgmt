@@ -13,22 +13,22 @@ public class BoardTilt2 : MonoBehaviour
     {
         currentRot = GetComponent<Transform>().eulerAngles;
 
-        if ((Input.GetKey(KeyCode.RightArrow) && (currentRot.z >= 351 || currentRot.z <= 14))) //tilts board to right
+        if ((Input.GetKey(KeyCode.RightArrow))) //tilts board to right
         {
             transform.Rotate(0, 0, -1);
         }
 
-        if ((Input.GetKey(KeyCode.LeftArrow)) && (currentRot.z <= 13 || currentRot.z >= 350)) //tilts board to left
+        if ((Input.GetKey(KeyCode.LeftArrow))) //tilts board to left
         {
             transform.Rotate(0, 0, 1);
         }
 
-        if ((Input.GetKey(KeyCode.DownArrow)) && (currentRot.z <= 15 || currentRot.z >= 348)) //tilts board back
+        if ((Input.GetKey(KeyCode.DownArrow))) //tilts board back
         {
             transform.Rotate(-1, 0, 0);
         }
 
-        if ((Input.GetKey(KeyCode.UpArrow)) && (currentRot.z >= 349 || currentRot.z <= 16)) //tilts board forward
+        if ((Input.GetKey(KeyCode.UpArrow))) //tilts board forward
         {
             transform.Rotate(1, 0, 0);
         }

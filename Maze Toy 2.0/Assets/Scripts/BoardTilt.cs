@@ -17,22 +17,22 @@ public class BoardTilt : MonoBehaviour
 
         //the numbers determine the max distance the board is able to tilt in that direction
 
-        if ((Input.GetKey(KeyCode.RightArrow) && (currentRot.z >= 351 || currentRot.z <= 14))) //pushing right side of board down
+        if ((Input.GetKey(KeyCode.RightArrow))) //pushing right side of board down
         {
             transform.Rotate(0, 0, -1);
         }
 
-        if ((Input.GetKey(KeyCode.LeftArrow)) && (currentRot.z <= 13 || currentRot.z >= 350)) //pushing left side of board down
+        if ((Input.GetKey(KeyCode.LeftArrow))) //pushing left side of board down
         {
             transform.Rotate(0, 0, 1);
         }
 
-        if ((Input.GetKey(KeyCode.DownArrow)) && (currentRot.z <= 15 || currentRot.z >= 348)) //tilts board back
+        if ((Input.GetKey(KeyCode.DownArrow))) //tilts board back
         {
             transform.Rotate(-1, 0, 0);
         }
 
-        if ((Input.GetKey(KeyCode.UpArrow)) && (currentRot.z >= 349 || currentRot.z <= 16)) //tilts board forward
+        if ((Input.GetKey(KeyCode.UpArrow))) //tilts board forward
         {
             transform.Rotate(1, 0, 0);
         }
